@@ -246,7 +246,7 @@ PANELS = [
      "The storm is set to hit the Andhra\u2013Odisha coast on Friday with winds near 100 km/h.",
      icon_cyclone),
     ("CULTURE  •  GAMES", (120, 40, 160), "GTA VI LAUNCHES TODAY",
-     "The decade's most awaited game arrives; doctors urge players to move every 30 minutes.",
+     "The decade's most awaited game arrives; doctors urge players to move often.",
      icon_game),
 ]
 
