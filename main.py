@@ -18,6 +18,9 @@ def main():
     src = here / "entry.png"
     if not src.is_file():
         raise SystemExit("entry.png is missing next to main.py")
+    with src.open("rb") as f:
+        if f.read(8) != b"\x89PNG\r\n\x1a\n":
+            raise SystemExit("entry.png is not a PNG image")
     out_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
     out_dir.mkdir(parents=True, exist_ok=True)
     dest = out_dir / "entry.png"
